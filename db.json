@@ -1,0 +1,27 @@
+{
+  "tasks": [
+    {
+      "id": "9ba6",
+      "task": "Gym",
+      "priority": "High",
+      "isOutdoor": true,
+      "city": "Delhi",
+      "weatherInfo": "Clear, 26°C"
+    },
+    {
+      "id": "40d2",
+      "task": "Study DSA",
+      "priority": "High",
+      "isOutdoor": false,
+      "city": "",
+      "weatherInfo": ""
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "shivam",
+      "password": "12345"
+    }
+  ]
+}
