@@ -5,20 +5,14 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 
 function App() {
-  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn); // Use isLoggedIn state
+  const user = useSelector((state) => state.auth.user);
 
   return (
     <div className="min-h-screen bg-gray-100 p-4">
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route 
-          path="/home" 
-          element={isLoggedIn ? <HomePage /> : <Navigate to="/login" />} 
-        />
-        <Route 
-          path="/" 
-          element={isLoggedIn ? <Navigate to="/home" /> : <Navigate to="/login" />} 
-        />
+      <Route path="/login" element={<LoginPage />} />
+        <Route path="/home" element={user ? <HomePage /> : <Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to={user ? "/home" : "/login"} />} />
       </Routes>
     </div>
   );

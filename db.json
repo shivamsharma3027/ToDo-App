@@ -15,6 +15,14 @@
       "isOutdoor": false,
       "city": "",
       "weatherInfo": ""
+    },
+    {
+      "id": "7f8a",
+      "task": "Gym for health",
+      "priority": "Low",
+      "isOutdoor": true,
+      "weatherInfo": "Clouds, 28°C",
+      "city": "Mumbai"
     }
   ],
   "users": [
