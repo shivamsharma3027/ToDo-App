@@ -49,8 +49,11 @@ git clone https://github.com/your-username/todo-app.git
 🔧 Environment Variables
 
 Frontend (create .env file in frontend folder):
+
     VITE_API_BASE_URL=http://localhost:3001 # For development
+
     VITE_API_BASE_URL=https://your-deployed-backend.com # For production
+
 
 cd todo-app
 npm run dev
